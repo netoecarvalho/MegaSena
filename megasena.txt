@@ -1,0 +1,28 @@
+vote_counts = {}
+votes_per_user = 0  # Counter for votes per user
+
+while votes_per_user < 6:  # Limit to 6 votes per user
+    user_input = input("Enter a number to vote for (1-60) or 'quit' to exit: ")
+
+    if user_input.lower() == 'quit':
+        break
+
+    try:
+        vote = int(user_input)
+        if 1 <= vote <= 60:
+            if vote in vote_counts:
+                vote_counts[vote] += 1
+            else:
+                vote_counts[vote] = 1
+            votes_per_user += 1 # Increment vote counter
+        else:
+            print("Invalid input. Please enter a number between 1 and 60.")
+    except ValueError:
+        print("Invalid input. Please enter an integer or 'quit'.")
+
+print("\n--- Final Vote Counts ---")
+for number, count in sorted(vote_counts.items()):
+    print(f"Number {number}: {count} votes")
+
+if votes_per_user == 6:
+    print("\nYou have reached the maximum of 6 votes.")
