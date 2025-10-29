@@ -1,0 +1,22 @@
+--- Resultados da Votação ---
+Nome: Neto
+Grupo: Neto
+Números Votados:
+Número 1: 1 votos
+Número 2: 1 votos
+Número 3: 1 votos
+Número 4: 1 votos
+Número 5: 1 votos
+Número 6: 1 votos
+
+--- Resultados da Votação ---
+Nome: Neto
+Grupo: 14
+Números Votados:
+Número 3: 1 votos
+Número 17: 1 votos
+Número 22: 1 votos
+Número 29: 1 votos
+Número 48: 1 votos
+Número 51: 1 votos
+
